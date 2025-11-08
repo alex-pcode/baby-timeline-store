@@ -1000,6 +1000,46 @@ body::after {
   display: block;
 }
 
+/* Gallery CTA */
+.gallery__cta {
+  margin-top: 4rem;
+  text-align: center;
+  animation: fadeUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 30% contain 60%;
+}
+
+.gallery__cta-text {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--wood-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.gallery__cta-button {
+  background: linear-gradient(135deg, var(--wood-medium) 0%, var(--wood-dark) 100%);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 24px var(--shadow-strong);
+}
+
+.gallery__cta-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 36px var(--shadow-strong);
+}
+
+.gallery__cta-button:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
 /* CTA Section */
 .cta {
   padding: 6rem 0;
